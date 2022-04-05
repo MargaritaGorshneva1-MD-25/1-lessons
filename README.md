@@ -66,6 +66,16 @@ name = name.upper()
 print(name.upper(), name.lower(), name.capitalize(), name[0].upper()+name.lower(), sep="\n", end="\n")
 
 # 1-lessons-9
+name = input('Введите имя: ')
+age = int(input("Введите возраст: "))
+name_letters = list(name)
+not_space = True
+for i in range(len(name_letters)):                  
+    if name_letters[i] == ' ':
+        not_space = False
+        print("Рада познакомиться!")
+else:
+    print('Введенные данные не соответствуют условиям!')
 
 # 1-lessons-10
 print("Какой будет ответ у задачи:3+(8*32/2)?")
