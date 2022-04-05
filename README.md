@@ -35,12 +35,35 @@ else:
     print("Моей бабушке 50, но у неё тело болит меньше, чем у тебя.")
     
 # 1-lessons-5
+print("Сколько вам лет?")
+age = int(input())
+if 22 <= age < 25:
+    print("14 лет: К 30 годам я объезжу всю Европу и примусь за Азию. 30 лет: Если сейчас реструктурировать кредит под 14%, то смогу взять гречу по акции")
+if 40 > age >= 20:
+    print("Раньше со словами Мне как обычно я заходил в бар. Теперь с такими словами я захожу в аптеку")
+else:
+    print("Повзрослел — это когда боишься стоматологов, не потому что больно, а потому что дорого.")
 
 # 1-lessons-6
+name = "Маргарита"
+print (name[1], name[::-1], name[-3], name[:5], end="\n", sep="\n")
 
 # 1-lessons-7
+print("Как вас зовут?")
+user_name_str = input()
+print("Сколько вам лет?")
+age = int(input())
+summa = 0
+proizv = 1
+for i in range(2):
+    summa=summa+int(str(age)[i])
+    proizv=proizv*int(str(age)[i])
+print(len(user_name_str), summa, proizv)
 
 # 1-lessons-8
+name = "Маргарита"
+name = name.upper()
+print(name.upper(), name.lower(), name.capitalize(), name[0].upper()+name.lower(), sep="\n", end="\n")
 
 # 1-lessons-9
 
